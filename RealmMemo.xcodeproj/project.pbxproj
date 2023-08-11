@@ -29,13 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E8B0B582A86136000143751 /* RealmMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = RealmMemo.app; path = "/Users/ganghoseong/Desktop/스파르타/RealmMemo/build/Debug-iphoneos/RealmMemo.app"; sourceTree = "<absolute>"; };
+		4E4F53A52A86220F00AA8B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E4F53A82A86232B00AA8B56 /* RealmMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B42620092738F2DA000F279D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B426200B2738F2DA000F279D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B42620102738F2DA000F279D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B42620122738F2DC000F279D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42620152738F2DC000F279D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B42620172738F2DC000F279D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B426201E2738F846000F279D /* MemoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewController.swift; sourceTree = "<group>"; };
 		B42620202738FC33000F279D /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
 		B426202A273911A2000F279D /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
@@ -66,11 +66,13 @@
 		B4261FFD2738F2DA000F279D = {
 			isa = PBXGroup;
 			children = (
-				B42620082738F2DA000F279D /* RealmMemo */,
+				B42620082738F2DA000F279D /* Demo */,
+				4E4F53A82A86232B00AA8B56 /* RealmMemo.app */,
+				4E4F53A52A86220F00AA8B56 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
-		B42620082738F2DA000F279D /* RealmMemo */ = {
+		B42620082738F2DA000F279D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				B4262032273927AB000F279D /* Model */,
@@ -80,9 +82,8 @@
 				B4A3B117273967E5006BF7D3 /* Extension */,
 				B42620122738F2DC000F279D /* Assets.xcassets */,
 				B42620142738F2DC000F279D /* LaunchScreen.storyboard */,
-				B42620172738F2DC000F279D /* Info.plist */,
 			);
-			path = RealmMemo;
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		B426201D2738F54C000F279D /* App+SceneDelegate */ = {
@@ -156,7 +157,7 @@
 				B426202827391169000F279D /* RealmSwift */,
 			);
 			productName = ssacMemo;
-			productReference = 4E8B0B582A86136000143751 /* RealmMemo.app */;
+			productReference = 4E4F53A82A86232B00AA8B56 /* RealmMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -303,6 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RealmMemo/Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -358,6 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = RealmMemo/Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -377,7 +380,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A69549U7C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ssacMemo/Info.plist;
+				INFOPLIST_FILE = RealmMemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -405,7 +408,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9A69549U7C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ssacMemo/Info.plist;
+				INFOPLIST_FILE = RealmMemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
