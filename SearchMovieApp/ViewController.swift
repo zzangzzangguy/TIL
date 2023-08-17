@@ -52,36 +52,40 @@ extension ViewController: UICollectionViewDataSource {
         
         
         cell.title.text = movie.title
+        //        cell.rating.text = movie.voteAverage
         
-        let url = URL(string: "https://image.tmdb.org/t/p/w500/\(movie.posterPath)")
-        DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: url!) {
-                cell.thumbnail.image = UIImage(data: data)
-                
+        if let url = URL(string: "https://image.tmdb.org/t/p/w500/\(movie.posterPath)") {
+            DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    cell.thumbnail.image = UIImage(data: data)
+                    // 수정 -> 이유
+                    
+                }
             }
+        }
+    }
             
             
             return cell
         }
         
     }
-    extension ViewController: UICollectionViewDelegateFlowLayout {
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let width = collectionView.frame.width / 3 - 15
-            let height = width * 1.5
-            return CGSize(width: width, height: height)
-        }
-        
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 10 // 셀 세로간격 설정
-        }
-        
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat { // 셀 가로간격 설정
-            return 10
-        }
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.frame.width / 3 - 15
+        let height = width * 1.5
+        return CGSize(width: width, height: height)
     }
     
-    extension ViewController: UICollectionViewDelegate {
-        // 추가적인 UICollectionViewDelegate 메서드들을 필요에 따라 구현할 수 있습니다.
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10 // 셀 세로간격 설정
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat { // 셀 가로간격 설정
+        return 10
     }
 }
+    
+    extension ViewController: UICollectionViewDelegate {
+    }
