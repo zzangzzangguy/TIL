@@ -5,6 +5,8 @@
 //  Created by t2023-m0096 on 2023/08/14.
 //
 
+//데이터 뿌려주기 
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -17,18 +19,22 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         MainView.dataSource = self
-        
-        APICaller.fetchMovies { result in
+        MainView.delegate = self
+        //        ShowMovie()
+        //    }
+        //
+        //    func ShowMovie() {
+        APIcaller.shared.getTrendingMovies(completion: { [weak self] result in
             switch result {
             case .success(let movies):
-                self.movies = movies
+                self?.movies = movies
                 DispatchQueue.main.async {
-                    self.MainView.reloadData()
+                    self?.MainView.reloadData()
                 }
             case .failure(let error):
                 print("Error fetching movies: \(error)")
             }
-        }
+        })
     }
 }
 
@@ -46,8 +52,36 @@ extension ViewController: UICollectionViewDataSource {
         
         
         cell.title.text = movie.title
-        // Set the poster image using movie.posterPath and URLSession
         
-        return cell
+        let url = URL(string: "https://image.tmdb.org/t/p/w500/\(movie.posterPath)")
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url!) {
+                cell.thumbnail.image = UIImage(data: data)
+                
+            }
+            
+            
+            return cell
+        }
+        
+    }
+    extension ViewController: UICollectionViewDelegateFlowLayout {
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            let width = collectionView.frame.width / 3 - 15
+            let height = width * 1.5
+            return CGSize(width: width, height: height)
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+            return 10 // 셀 세로간격 설정
+        }
+        
+        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat { // 셀 가로간격 설정
+            return 10
+        }
+    }
+    
+    extension ViewController: UICollectionViewDelegate {
+        // 추가적인 UICollectionViewDelegate 메서드들을 필요에 따라 구현할 수 있습니다.
     }
 }
