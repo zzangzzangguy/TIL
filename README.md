@@ -6,3 +6,7 @@
 2-2. numberOfItemRow, cellforitem, didSelect - 이거 3개 무적권 알기 (indexpath가 무엇인지 정확히 알기)
 
 3. viewcontroller에서 init으로 데이터 전달하는 방식
+
+swift 에서 api 전달방식
+
+urlSession Vs Coredata 
