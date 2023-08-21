@@ -9,4 +9,9 @@
 
 swift 에서 api 전달방식
 
-urlSession Vs Coredata 
+URLSession 으로 데이터 전달 
+
+
+Coredata Vs Userdefaults
+urlSession Vs alamofire 
+
