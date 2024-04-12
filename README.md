@@ -3,7 +3,8 @@
 
 ## IOS 
 - [HIG Human Interface Guide](https://github.com/zzangzzangguy/TIL/issues/3)   
-- [Auto Layout programatically Layout](https://github.com/zzangzzangguy/TIL/issues/25)   
+- [Auto Layout programatically Layout](https://github.com/zzangzzangguy/TIL/issues/25)
+- [단방향 프로그래밍](https://github.com/zzangzzangguy/TIL/issues/31)
 
 
 ## Swift 
