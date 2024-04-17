@@ -9,6 +9,8 @@
 
 
 ## Swift 
+- [class Vs Struct](https://github.com/zzangzzangguy/TIL/issues/44)
+- [weak 와 Unowed 참조](https://github.com/zzangzzangguy/TIL/issues/45)
 - [enumrated](https://github.com/zzangzzangguy/TIL/issues/4)   
 - [TableView](https://github.com/zzangzzangguy/TIL/issues/7)   
 - [protocol](https://github.com/zzangzzangguy/TIL/issues/10)   
@@ -20,7 +22,8 @@
 - [Core Data](https://github.com/zzangzzangguy/TIL/issues/28)   
 - [Search Controller](https://github.com/zzangzzangguy/TIL/issues/29)   
 - [UILongPressGestureRecognizer](https://github.com/zzangzzangguy/TIL/issues/34)   
-- [Moya](https://github.com/zzangzzangguy/TIL/issues/33)   
+- [Moya](https://github.com/zzangzzangguy/TIL/issues/33)
+- 
 
 
 
