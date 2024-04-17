@@ -27,7 +27,12 @@
 ## RxSwift 
 - [Observable 과 Observer](https://github.com/zzangzzangguy/TIL/issues/36)   
 - [Debounce 와 Throtle](https://github.com/zzangzzangguy/TIL/issues/37)   
-- [Dispose, DisposeBag](https://github.com/zzangzzangguy/TIL/issues/38)   
+- [Dispose, DisposeBag](https://github.com/zzangzzangguy/TIL/issues/38)
+- [Error Handling](https://github.com/zzangzzangguy/TIL/issues/43)
+- [Transforming Operators](https://github.com/zzangzzangguy/TIL/issues/42)
+- [RxCocoa](https://github.com/zzangzzangguy/TIL/issues/41)
+- [Subject](https://github.com/zzangzzangguy/TIL/issues/40)
+- [Filtering Operator](https://github.com/zzangzzangguy/TIL/issues/39)
 
 ## Architecture 
 
