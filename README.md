@@ -24,6 +24,7 @@
 - [UILongPressGestureRecognizer](https://github.com/zzangzzangguy/TIL/issues/34)   
 - [Moya](https://github.com/zzangzzangguy/TIL/issues/33)
 - [if let Vs Guard else](https://github.com/zzangzzangguy/TIL/issues/46)
+- [Realm](https://github.com/zzangzzangguy/Pokemon/issues/7)
 
 
 
