@@ -6,6 +6,8 @@
 - [Auto Layout programatically Layout](https://github.com/zzangzzangguy/TIL/issues/25)
 - [단방향 프로그래밍](https://github.com/zzangzzangguy/TIL/issues/31)
 - [연결리스트](https://github.com/hdaisywd/CS-Study/blob/main/Data-Structure/Linked_List/%5B%EA%B9%80%EC%9D%80%EA%B2%BD%5D%20%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8.md)
+- [메모리 관리와 ARC](https://github.com/zzangzzangguy/TIL/issues/48)
+- [강한 참조와 메모리 누수](https://github.com/zzangzzangguy/TIL/issues/49)
 
 
 ## Swift 
