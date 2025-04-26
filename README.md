@@ -11,7 +11,7 @@
 
 
 ## Swift 
-- [OSLog]#39
+- [OSLog](https://github.com/zzangzzangguy/TIL/issues/50)
 - [private](https://github.com/zzangzzangguy/TIL/issues/12)
 - [class Vs Struct](https://github.com/zzangzzangguy/TIL/issues/44)
 - [weak 와 Unowed 참조](https://github.com/zzangzzangguy/TIL/issues/45)
